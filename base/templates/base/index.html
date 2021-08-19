@@ -1,0 +1,107 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en"></html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Omoniyi Victor</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">     
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <link rel="stylesheet" href="{% static 'css/index.css' %}" type="text/css">
+    </head>
+    <body>
+        <header>
+            <h2 class="logo">VICO</h2>
+        </header>
+           <div id="profile">
+               <div class="first">
+                   <h1>Software Engineer, AI/ML Enthusiast</h1>
+                   <h4>Welcome to my portfolio, would you like to</h4>
+                   <a href="#about">Learn more</a>
+                   <a href="#form_group">Get in Touch</a>
+               </div>
+               <div class="second">
+                   <div class="image"></div>
+               </div>
+           </div>
+           
+           <div id="about">
+               <h2>About</h2>
+               <h5 style="padding-top: 20px;"><b>Hello there, My name is OMONIYI VICTOR</b>. I'm a Software Developer
+                who is very passionate about using tech to make people's life easier. I'm always ready to adapt according to project specifications
+                irrespective of the stack.
+            </h5>
+            </div>
+            <div id="skills">
+                <h2>Skills</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript[ES6]</li>
+                        <li>Python</li>
+                        <li>Bootstrap</li>
+                        <li>Git</li>
+                        <li>Heroku</li>
+                        <li>Django</li>
+                        <li>Nodejs</li>
+                        <li>Expressjs</li>
+                        <li>Nestjs</li>
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
+                    </ul>
+             </div>
+             <div id="education">
+                <h2>Education</h2>
+                <h4 style="padding-top: 10px;">BACHELOR OF SCIENCE, COMPUTER SCIENCE</h4>
+                <h5>Chrisland University, Abeokuta. Ogun State</h5>
+                <h5>Oct 2018 - Current</h5>
+                <h6>Majoring in Structured programming, Operating Systems, System Analysis and Design
+                    Formal Methods in Software Development, Algorithm and Complexity analysis, Fundamental Data Structure.
+                </h6>
+             </div>
+            <div id="works">
+                <div id="works-text">
+                <h2 style="padding-top: 20px;">Works</h2>
+                <h5 style="padding-top: 20px;">Below are some of the cool projects I've done so far</h5>
+            </div>
+            <div id="works-view">
+                <div class="third">
+                    <h2>To-Do App</h2>
+                    <h6>This is a to-do app I built using Django on the backend, HTML and CSS on the frontend</h6>
+                    <div class="links">
+                    <a style="color: #fff; padding: 20px;" href="https://github.com/papivic0/vico-todo"><i class="fa fa-github"></i></a>
+                    <a href="http://vico-todo.herokuapp.com"><i style="color: #fff;" class="fa fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="fourth">
+                    <h2 href="https://github.com/papivic0/racing-game">Car Race game</h2>
+                    <h6>This is a car race game I built using HTML, CSS and Javascript</h6>
+                    <div class="links">
+                    <a style="color: #fff" href="https://github.com/papivic0/racing-game"><i class="fa fa-github"></i></a>
+                    </div>
+                </div>
+               </div>
+            </div>
+            <footer>
+                <h1 style="text-align: center">Contact me</h1>
+                <form action="#" class="" method="POST">
+                    {% csrf_token %}
+                    <div id="form_group"  style="padding-top: 30px;">
+                        <label for="fname">First Name</label>
+                        <input type="text" name="first_name" class="form-control" placeholder="First Name">
+
+                        <label for="lname">Last Name</label>
+                        <input type="text" name="last_name" class="form-control" placeholder="Last Name">
+
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" placeholder="Leave a message..."></textarea>
+                        
+                        <button type="submit" class="btn_submit">Submit</button>
+                    </div>
+                </form>
+
+            </footer>
+</body>
+</html>

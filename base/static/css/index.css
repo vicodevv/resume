@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  line-height: 30px;
+}
+header{
+  height: 200px;
+  width: 100%;
+  right: 0;
+  padding: 20px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#profile{
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+i{
+ font-size: xx-large 
+}
+.first{
+  width: 40%;
+  height: 300px;
+}
+.second{
+  width: 40%;
+  height: 300px; 
+  padding-left: 350px;
+}
+#profile a{
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 20px;
+  padding: 10px 30px;
+  display: inline-block;
+  font-size: 1em;
+  letter-spacing: 2px;
+  transition: 0.4s; 
+}
+#profile a:hover{
+  letter-spacing: 6px;
+}
+.image{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-image: url(../image/vico.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#about{
+  transition: 0.5s ease-in;
+  height: 300px;
+  width: 100%;
+  background: #111;
+  color: #fff;
+  padding: 70px;
+  text-align: center;
+}
+#skills{
+    transition: 0.5s ease-in;
+    height: 600px;
+    width: 100%;
+    background: #fff;
+    color: #111;
+    padding: 70px;
+}
+#education{
+    transition: 0.5s ease-in;
+    height: 320px;
+    width: 100%;
+    background: #111;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+#works{
+  height: 850px;
+  width: 100%;
+  background: #fff;
+  color: #111;
+  padding: 70px;
+}
+#works-text{
+  height: 200px;
+  width: 100%;
+  background: #fff;
+  padding: 70px;
+  padding-top: 10px;
+  text-align: center;
+}
+#works-view{
+  height: 650px;
+  width: 100%;
+  background: #fff;
+  color: #fff;
+  display: flex;
+  padding: 50px;
+  justify-content: space-between;
+}
+.third{
+  height: 400px;
+  width: 40%;
+  background: #111;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.fourth{
+  height: 400px;
+  width: 40%;
+  background: #111;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+footer{
+  height: 550px;
+  width: 100%;
+  background: #111;
+  color: #fff;
+  display: inline-block;
+  padding: 50px;
+}
+input[type=text], select {
+    width: 30%;
+    padding: 12px 0;
+    margin: 8px 0;
+    display: flex;
+    flex-direction: column;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    color: #111;
+}
+textarea{
+    width: 30%;
+    padding: 12px 0;
+    margin: 8px 0;
+    display: flex;
+    flex-direction: column;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    color: #111;
+}
+button{
+    text-decoration: none;
+    color: #111;
+    padding: 5px 5px;
+    cursor: pointer;
+    background: #fff;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+footer h2{
+  font-size: large;
+  padding-top: 50px;
+  color: #fff;
+}
+
+@media(max-width:1024px){
+  header{
+    padding: 20px;
+  }
+  .first{
+    width: 80%;
+  }
+  .second{
+    display: none;
+  }
+  #works{
+    height: 900px;
+    padding: 10px;
+  }
+  #education{
+      height: 400px;
+  }
+  #works-view{
+    height: 800px;
+    display: inline-block;
+    padding: 10px;
+  }
+  .third, .fourth, .fifth{
+    border-radius: 0%;
+    height: 200px;
+    width: 100%;
+    margin-top: 50px;
+  }
+  input[type=text], select {
+    width: 100%;
+}
+textarea{
+    width: 100%;
+}
+@media(max-width: 450px){
+  .profile{
+    height: 400px;
+  }
+  #about{
+    height: 300px;
+    padding: 20px;
+  }
+}
+}
