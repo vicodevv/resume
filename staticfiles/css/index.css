@@ -52,7 +52,7 @@ i{
   width: 200px;
   border-radius: 50%;
   background-image: url(../image/vico2.jpg);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 #about{
